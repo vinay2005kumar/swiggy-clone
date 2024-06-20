@@ -1,0 +1,41 @@
+.cskeleton{
+    width: 285px;
+    height: 285px;
+    /* border:1px solid green; */
+    /* animation:pulse 1.5s infinite ease-in-out; */
+    margin-right:15px ;
+    border-radius: 15px;
+    position: relative;
+    top:20px;
+}
+.skeleton2.img{
+    width: 275px;
+    height: 185px;
+    /* border:1px solid brown ; */
+   background-color: #a19d9d;
+    border-radius: 15px;
+    animation:pulse 1.5s infinite ease-in-out;
+    position: relative;
+    left: 5px;
+}
+.skeleton2.name{
+    font-size: 22px;
+    width: 180px;
+    height: 30px;
+    background-color:#a19d9d;
+    animation:pulse 1.5s infinite ease-in-out;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+@keyframes pulse {
+    0% {
+      background-color: #a19d9d;
+    }
+    50% {
+      background-color: #dbd8d8;
+    }
+    100% {
+      background-color: #a19d9d;
+    }
+  }

@@ -1,0 +1,141 @@
+#list section{
+    height: 33px;
+    border: 1px solid rgb(208, 202, 202);
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(63, 62, 62);
+    font-size: small;
+    font-weight: 400;
+    
+}
+#list{
+    width: 1211px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: start;
+    gap:20px;
+    position: sticky;
+    top:100px;
+    z-index: 999;
+    background-color: white;
+    top:1px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#firm{
+    width: 1111px;
+    position: absolute;
+    top:800px;
+    left: 200px;
+}
+h5{
+    position: relative;
+    font-size: 23px;
+    bottom: -10px;  
+}
+.cards{
+    width: 275px;
+    height: 285px;
+    position: relative;
+    top:20px;
+    /* border: 1px solid green; */
+    margin-right: 15px;
+    margin-left: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.imgs{
+    width: 275px ;
+    height:185px;
+   
+}
+#img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    /* padding: 0px 32px 0px 16px; */
+    border-radius: 15px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0), rgba(0, 0, 0));
+}
+.dark{
+    width: 275px;
+    height: 50px;
+    position: absolute;
+    bottom:100px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0,0.1), rgba(0, 0, 0,0.9),rgba(0,0,0,0.9));
+}
+.maindata{
+   width: 1145px;
+ 
+   /* display:flex; */
+   position: absolute;
+   height: 10px;
+   border: 5px solid red;
+}
+.data{
+    width: 1145px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap:35px;
+    height: 2550px;
+    /* border: 1px solid green; */
+    overflow: hidden;
+    transition: 1.3s;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
+#link{
+    text-decoration: none;
+}
+#button,#buy{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    background-color:darkgreen;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.name{
+    font-size: 15px;
+    color:black;
+}
+#buy{
+    left:5px;
+}
+#button:hover,#buy:hover{
+    transition: 0.3s;
+    transform: scale(1.1,1.1);
+}
+#button:not(:hover),#buy:not(:hover){
+    opacity: 0.9;
+}
+#show{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    border: 1px solid violet;
+    position: relative;
+    left: 500px;
+    cursor: pointer;
+    top: 50px;
+}
+#showicon{
+    font-size: 18px;
+    position: absolute;
+    top:15px;
+    right: 15px;
+}

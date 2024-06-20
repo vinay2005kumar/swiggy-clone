@@ -1,0 +1,47 @@
+.line{
+    width: 1150px;
+    height: 0px;
+    border: 1px solid rgb(240, 239, 239);
+    z-index: 99;
+    position: absolute;
+    top:360px;
+    left: 180px;
+}
+.line2{
+    width: 1150px;
+    height: 0px;
+    border: 1px solid  rgb(240, 239, 239);
+    z-index: 99;
+    position: absolute;
+    top:810px;
+    left: 180px;
+}
+.line3{
+    width: 1150px;
+    height: 0px;
+    border: 1px solid  rgb(240, 239, 239);
+    z-index: 99;
+    position: absolute;
+    top:810px;
+    left: 180px;
+}
+html,body,#root{
+    height: 100%;
+    margin: 0;
+}
+.pnum{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid grey; */
+    right: 206px;
+    top:22px;
+    text-align: center;
+    color: red;
+
+}
+body, html, #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }

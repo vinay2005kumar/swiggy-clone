@@ -1,0 +1,60 @@
+.items{
+ display: flex;
+ transition: 0.3s;
+ /* border: 1px solid green; */
+ position: relative;
+ right: 25px;
+}
+.itemMenu{
+    position: relative;
+    top:-40px;
+    left: 30px;
+}
+.item img{
+    width:165px ;
+    height: 180px;
+}
+.itemMenu h1{
+    font-size: 21px;
+    position: relative;
+    top:40px;
+    left: 180px;
+
+}
+.larrow{
+    position: absolute;
+    left: 1200px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 9;
+    background-color: rgb(243, 240, 240);
+    border-radius: 50%;
+}
+.rarrow{
+    font-size: 25px;
+    position: absolute;
+    left: 1240px;
+    cursor: pointer;
+    z-index: 9;
+    background-color: rgb(211, 208, 208);
+    border-radius: 50%;
+}
+#ldiv .larrow:hover{
+    cursor:auto;
+}
+#ldiv{
+    background-color: red;
+}
+.scroll{
+    /* border: 1px solid green; */
+    height: 255px;
+    width: 1100px;
+    display: flex;
+    position: absolute;
+    left: 180px;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* border: 1px solid black; */
+    transition: 0.3s;
+}
