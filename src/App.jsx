@@ -30,7 +30,7 @@ const App = () => {
 
   if (isMobile) {
     return (
-      <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '50px' }}>
+      <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '50px' }} className='msg'>
         Mobile view is not supported
       </div>
     );
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <LandingPage />
+      <LandingPage className='swiggy'/>
     </BrowserRouter>
   );
 };
