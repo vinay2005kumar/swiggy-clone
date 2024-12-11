@@ -1,29 +1,46 @@
-import React, { useEffect, useState } from 'react'
-import LandingPage from './suby/pages/LandingPage'
-import Error from './suby/components/Error'
+import React, { useEffect, useState } from 'react';
+import LandingPage from './suby/pages/LandingPage';
+import Error from './suby/components/Error';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-const App = () => {
-  const[isonline,setonline]=useState(navigator.onLine)
-  useEffect(()=>{
-    const handleonline=()=>setonline(true)
-    const handleoffline=()=>setonline(false)
-    window.addEventListener('online',handleonline)
-    window.addEventListener('offline',handleoffline)
-  return()=>{
-    window.removeEventListener('online',handleonline)
-    window.removeEventListener('offline',handleoffline)
-  }
-  },[])
-  return (
-    <div>
-      {/* {isonline ? <LandingPage></LandingPage>: <Error></Error>} */}
-     { isonline?
-     <BrowserRouter>
-      <LandingPage></LandingPage>
-      </BrowserRouter> :<Error></Error>}
-    
-    </div>
-  )
-}
+import './App.css';
 
-export default App
+const App = () => {
+  const [isOnline, setOnline] = useState(navigator.onLine);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust width threshold as needed
+
+  useEffect(() => {
+    const handleOnline = () => setOnline(true);
+    const handleOffline = () => setOnline(false);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  if (!isOnline) {
+    return <Error />;
+  }
+
+  if (isMobile) {
+    return (
+      <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '50px' }}>
+        Mobile view is not supported
+      </div>
+    );
+  }
+
+  return (
+    <BrowserRouter>
+      <LandingPage />
+    </BrowserRouter>
+  );
+};
+
+export default App;
