@@ -23,11 +23,6 @@ const App = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  if (!isOnline) {
-    return <Error />;
-  }
-
   if (isMobile) {
     return (
       <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '50px' }} className='msg'>
@@ -35,6 +30,11 @@ const App = () => {
       </div>
     );
   }
+  if (!isOnline) {
+    return <Error />;
+  }
+
+ 
 
   return (
     <BrowserRouter>
