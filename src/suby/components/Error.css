@@ -1,0 +1,32 @@
+
+.error{
+    width: 900px;
+    height: 700px;
+    position:absolute;
+    left:350px;
+    bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 99;
+    background-color: white;
+    top:20px;
+   
+}
+.error h1{
+    font-size: 55px;
+    position: relative;
+    left: 30px;
+    top:200px;
+    z-index: 5;
+}
+.error p{
+    position: relative;
+    top:400px;
+    left: 330px;
+    z-index: 7;
+}
+.error img{
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+

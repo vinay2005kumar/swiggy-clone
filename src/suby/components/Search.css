@@ -1,0 +1,56 @@
+
+.div{
+    width: 860px;
+    height: 200px;
+}
+.div h1{
+    font-size: 20px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.container div input{
+    width: 860px;
+    height: 50px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+.container div #isearch{
+    font-size: 25px;
+    position: absolute;
+    right: 340px;
+    top:15px;
+}
+.div .items{
+    width: 860px;
+    height: 100px;
+    position:absolute;
+    left: 330px;
+    margin-top: 15px;
+}
+.div .items img{
+    width: 100%;
+    height: 100%;
+}
+.snum{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid green; */
+    position: absolute;
+    left: 1295px;
+    top: 22px;
+    text-align: center;
+    color: red;
+}

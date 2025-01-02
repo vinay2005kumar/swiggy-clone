@@ -1,0 +1,9 @@
+
+@media screen and (max-width:760px){
+    .swiggy{
+        display: none;
+    }
+    .msg{
+        display: block;
+    }
+}

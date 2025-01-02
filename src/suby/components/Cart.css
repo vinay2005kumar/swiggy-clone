@@ -1,0 +1,218 @@
+.chelp{
+    position: relative;
+    left: 50px;
+}
+
+.ctop{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+   
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.ctext{
+    position: relative;
+    right: 230px;
+   
+}
+#cimg{
+    width: 35px;
+    height: 50px;
+    margin-right: 40px;
+}
+.chelp{
+    margin-left: 200px;
+}
+.cihelp{
+    margin-right: 5px;
+    font-size: 21px;
+    position: relative;
+    top: 5px;
+}
+.cisign{
+    font-size: 21px;
+    position: relative;
+    top: 5px;
+    margin-right: 4px;
+    
+}
+.csignin:hover{
+    cursor: pointer;
+    color: red;
+}
+.middle{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    left: 500px; */
+    position: relative;
+    gap:100px;
+ 
+}
+.cartimg{
+    width: 270px;
+    height: 250px;
+    position: absolute;
+    top:50px;
+    margin-bottom: 60px;
+}
+.cartimg img{
+    width: 100%;
+    height: 100%;
+}
+#cbutton{
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color:#FC8019;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    top:50px;
+    cursor: pointer;
+}
+.middle h4{
+    position: relative;
+    top:40px;
+    font-size: 20px;
+    color:rgb(92, 89, 89);
+    left: 30px;
+}
+.middle p{
+    position: relative;
+    top:30px;
+}
+.cartimg2{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    left: 15px;
+    top:2px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.cartimg2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.cartitem{
+    width: 800px;
+    height: 180px;
+   
+}
+#carttext{
+    position: relative;
+    text-align: center;
+    top:0px;
+    font-size: 28px;
+}
+.carttext{
+    width: 550px;
+    height: 80px;
+    /* border: 1px solid black; */
+    font-size: 18px;
+    text-indent: 0px;
+    line-height: 30px;
+    position: absolute;
+    right:72px;
+}
+.count{
+    width: 200px;
+    height: 40px;
+    border: 1px solid violet;
+    display: flex;
+    position: absolute;
+    left: 180px;
+    bottom: 10px;
+    align-items: center;
+}
+.count button{
+    width: 50px;
+    /* background-color: green;
+    border: none; */
+    cursor: pointer;
+    height: 40px;
+}
+.ccount{
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+.cbuy{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right:45px;
+    background-color:darkgreen;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.cbuy:hover{
+    transition: 0.3s;
+    transform: scale(1.1,1.1);
+}
+.mainCart{
+    margin-bottom: 50px;
+    width: 800px;
+    height: 140px;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 380px;
+    top:10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.cost{
+    width: 150px;
+    height: 40px;
+    border: 1px solid rebeccapurple;
+    position: absolute;
+    bottom: 20px;
+    left: 420px;
+    font-size: 26px;
+    text-align: center;
+    bottom: 10px;
+}
+#inr{
+    position: relative;
+    top:4px;
+}
+
+#cross{
+   
+    font-size: 26px;
+    cursor: pointer;
+}
+.delete{
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top:1px;
+    right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cross:hover{
+    border: 1px dotted red;
+}
+.cartnum{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid green; */
+    position: absolute;
+    right: 205px;
+    top: 22px;
+    text-align: center;
+    color: red;
+}
